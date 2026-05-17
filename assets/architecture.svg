@@ -1,49 +1,44 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-label="Three intensity modes" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif">
-  <rect width="1200" height="720" fill="#ffffff"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 540" role="img" aria-label="Three intensity modes" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif">
+  <rect width="1200" height="540" fill="#ffffff"/>
 
-  <text x="600" y="90" text-anchor="middle" font-size="32" font-weight="500" fill="#0a0a0a">three modes. one question to pick.</text>
-  <text x="600" y="130" text-anchor="middle" font-size="16" fill="#71717a">light for captions. heavy for anything you cannot take back.</text>
+  <text x="80" y="90" font-size="30" font-weight="500" fill="#0a0a0a">three modes. one word picks it.</text>
+  <text x="80" y="124" font-size="16" fill="#71717a">light for captions. heavy for anything you cannot take back.</text>
 
-  <g transform="translate(200 220)">
-    <rect x="-130" y="0" width="260" height="380" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="0" y="46" text-anchor="middle" font-size="22" font-weight="600" fill="#0a0a0a">light</text>
-    <text x="0" y="78" text-anchor="middle" font-size="14" fill="#71717a">captions, replies</text>
-    <line x1="-100" y1="106" x2="100" y2="106" stroke="#e4e4e7"/>
-    <text x="0" y="150" text-anchor="middle" font-size="36" font-weight="600" fill="#0a0a0a">30s</text>
-    <text x="0" y="178" text-anchor="middle" font-size="13" fill="#a1a1aa" letter-spacing="1.5">8K TOKENS</text>
-    <line x1="-100" y1="216" x2="100" y2="216" stroke="#e4e4e7"/>
-    <text x="0" y="252" text-anchor="middle" font-size="14" fill="#52525b">5 reviewers</text>
-    <text x="0" y="278" text-anchor="middle" font-size="14" fill="#52525b">no debate</text>
-    <text x="0" y="304" text-anchor="middle" font-size="14" fill="#52525b">no revision loop</text>
+  <g font-size="11" fill="#a1a1aa" letter-spacing="2">
+    <text x="80" y="200">MODE</text>
+    <text x="400" y="200">TIME</text>
+    <text x="560" y="200">TOKENS</text>
+    <text x="740" y="200">WHAT RUNS</text>
   </g>
+  <line x1="80" y1="216" x2="1120" y2="216" stroke="#0a0a0a" stroke-width="1.2"/>
 
-  <g transform="translate(600 220)">
-    <rect x="-130" y="0" width="260" height="380" rx="8" fill="#fafafa" stroke="#0a0a0a" stroke-width="1.5"/>
-    <rect x="-50" y="-14" width="100" height="28" rx="14" fill="#0a0a0a"/>
-    <text x="0" y="5" text-anchor="middle" font-size="11" fill="#ffffff" font-weight="600" letter-spacing="1.5">DEFAULT</text>
-    <text x="0" y="46" text-anchor="middle" font-size="22" font-weight="600" fill="#0a0a0a">medium</text>
-    <text x="0" y="78" text-anchor="middle" font-size="14" fill="#71717a">posts, drafts, plans</text>
-    <line x1="-100" y1="106" x2="100" y2="106" stroke="#e4e4e7"/>
-    <text x="0" y="150" text-anchor="middle" font-size="36" font-weight="600" fill="#0a0a0a">2m</text>
-    <text x="0" y="178" text-anchor="middle" font-size="13" fill="#a1a1aa" letter-spacing="1.5">25K TOKENS</text>
-    <line x1="-100" y1="216" x2="100" y2="216" stroke="#e4e4e7"/>
-    <text x="0" y="252" text-anchor="middle" font-size="14" fill="#52525b">10 reviewers</text>
-    <text x="0" y="278" text-anchor="middle" font-size="14" fill="#52525b">full debate</text>
-    <text x="0" y="304" text-anchor="middle" font-size="14" fill="#52525b">1 revision loop</text>
+  <g transform="translate(0 270)">
+    <text x="80" y="0" font-size="26" font-weight="600" fill="#0a0a0a">light</text>
+    <text x="400" y="-2" font-size="22" fill="#0a0a0a">30s</text>
+    <text x="560" y="-2" font-size="22" fill="#0a0a0a">8k</text>
+    <text x="740" y="-2" font-size="15" fill="#52525b">5 board members  ·  no debate  ·  no loops</text>
   </g>
+  <line x1="80" y1="296" x2="1120" y2="296" stroke="#e4e4e7"/>
 
-  <g transform="translate(1000 220)">
-    <rect x="-130" y="0" width="260" height="380" rx="8" fill="#fafafa" stroke="#e4e4e7" stroke-width="1"/>
-    <text x="0" y="46" text-anchor="middle" font-size="22" font-weight="600" fill="#0a0a0a">heavy</text>
-    <text x="0" y="78" text-anchor="middle" font-size="14" fill="#71717a">launches, contracts</text>
-    <line x1="-100" y1="106" x2="100" y2="106" stroke="#e4e4e7"/>
-    <text x="0" y="150" text-anchor="middle" font-size="36" font-weight="600" fill="#0a0a0a">5m</text>
-    <text x="0" y="178" text-anchor="middle" font-size="13" fill="#a1a1aa" letter-spacing="1.5">45K TOKENS</text>
-    <line x1="-100" y1="216" x2="100" y2="216" stroke="#e4e4e7"/>
-    <text x="0" y="252" text-anchor="middle" font-size="14" fill="#52525b">10 reviewers</text>
-    <text x="0" y="278" text-anchor="middle" font-size="14" fill="#52525b">full debate</text>
-    <text x="0" y="304" text-anchor="middle" font-size="14" fill="#52525b">up to 3 loops</text>
+  <g transform="translate(0 350)">
+    <text x="80" y="0" font-size="26" font-weight="600" fill="#0a0a0a">medium</text>
+    <g transform="translate(195 -22)">
+      <rect width="78" height="22" rx="11" fill="#0a0a0a"/>
+      <text x="39" y="15" text-anchor="middle" font-size="10" fill="#ffffff" font-weight="600" letter-spacing="1.5">DEFAULT</text>
+    </g>
+    <text x="400" y="-2" font-size="22" fill="#0a0a0a">2m</text>
+    <text x="560" y="-2" font-size="22" fill="#0a0a0a">25k</text>
+    <text x="740" y="-2" font-size="15" fill="#52525b">10 employees draft  +  10 board review  +  1 revision</text>
   </g>
+  <line x1="80" y1="376" x2="1120" y2="376" stroke="#e4e4e7"/>
 
-  <text x="600" y="670" text-anchor="middle" font-size="16" fill="#71717a">council asks once. remembers your default. one word picks the mode.</text>
+  <g transform="translate(0 430)">
+    <text x="80" y="0" font-size="26" font-weight="600" fill="#0a0a0a">heavy</text>
+    <text x="400" y="-2" font-size="22" fill="#0a0a0a">5m</text>
+    <text x="560" y="-2" font-size="22" fill="#0a0a0a">45k</text>
+    <text x="740" y="-2" font-size="15" fill="#52525b">employees meet  +  board debate  +  up to 3 revisions</text>
+  </g>
+  <line x1="80" y1="456" x2="1120" y2="456" stroke="#e4e4e7"/>
+
+  <text x="80" y="510" font-size="14" fill="#71717a">ai-teamwork asks once. remembers your default. one word picks the mode forever after.</text>
 </svg>
