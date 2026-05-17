@@ -4,16 +4,16 @@
 
 # Open Council
 
-### The Claude Code skill that gives you a ten-person team and a ten-member board before you see the answer.
+### A portable agentic AI skill that gives you a ten-person team and a ten-member board before you see the answer.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-22d3ee.svg)](LICENSE)
-[![Claude Code skill](https://img.shields.io/badge/claude%20code-skill-f59e0b.svg)](#install)
+[![Portable spec](https://img.shields.io/badge/portable-spec-f59e0b.svg)](#compatible-tools)
 [![Install Time](https://img.shields.io/badge/install-30%20seconds-22c55e.svg)](#install)
 [![Questions Asked](https://img.shields.io/badge/questions%20asked-1-a78bfa.svg)](#use)
 
-**A multi-agent AI quality system for [Claude Code](https://claude.com/claude-code). Ten specialist employees draft the work. Ten industry-veteran board members review it. You see one verdict. One command to install, one question to answer.**
+**A multi-agent AI quality system. Ten specialist employees draft the work. Ten industry-veteran board members review it. You see one verdict. One command to install, one question to answer.**
 
-Built as a [Claude skill](https://claude.com/claude-code) for anti-sycophancy, AI quality control, multi-agent orchestration, LLM disagreement, AI hallucination prevention, and team-style task execution. Works with Claude Sonnet, Claude Opus, and Claude Haiku via Claude Code.
+Built as a portable skill spec for anti-sycophancy, AI quality control, multi-agent orchestration, LLM disagreement, AI hallucination prevention, and team-style task execution. Works with [Claude Code](https://claude.com/claude-code), [Cursor](https://cursor.sh), [Codex CLI](https://github.com/openai/codex), [Continue](https://continue.dev), and [Aider](https://aider.chat), plus any agentic coding tool that reads `SKILL.md` files or supports custom skill folders. Tested with Claude Sonnet, Claude Opus, Claude Haiku, GPT-4 Codex, and o4-mini.
 
 </div>
 
@@ -45,20 +45,41 @@ Each one is prompted to disagree, not to agree. Only after the board reaches con
 
 ---
 
+## Compatible tools
+
+Open Council is a portable `SKILL.md` spec. Any agentic AI tool that loads custom skills can run it. Install path differs per tool, the skill itself is identical.
+
+| Tool | Install path | Status |
+|------|--------------|--------|
+| [Claude Code](https://claude.com/claude-code)  | `~/.claude/skills/opencouncil`                              | tested |
+| [Cursor](https://cursor.sh)                    | `~/.cursor/rules/opencouncil` or `.cursor/rules/` in repo   | tested |
+| [Codex CLI](https://github.com/openai/codex)   | `~/.codex/skills/opencouncil`                               | tested |
+| [Continue](https://continue.dev)               | `~/.continue/skills/opencouncil`                            | tested |
+| [Aider](https://aider.chat)                    | `.aider.conf.yml` → `read: opencouncil/skills/`             | tested |
+| Any other tool that loads markdown skills      | drop the `skills/` folder in, point your tool at it         | community |
+
+---
+
 ## Install
 
-Two commands. The first installs Open Council. The second arms every employee with their full skill stack (vercel-labs, supabase, emilkowalski, sergebulaev, lawvable, and 55+ more — about 60 skills across the team).
+Two steps. Pick your tool below, then run `install-all.sh` to arm every employee with their full skill stack (60+ skills across the team: vercel-labs, supabase, obra/superpowers, emilkowalski, sergebulaev, lawvable, anthropics/skills, and more).
 
 ```bash
-git clone https://github.com/vinitjhawar/opencouncil.git ~/.claude/skills/opencouncil
-bash ~/.claude/skills/opencouncil/install-all.sh
+# 1. install Open Council (pick the line for your tool)
+git clone https://github.com/vinitjhawar/opencouncil.git ~/.claude/skills/opencouncil       # Claude Code
+git clone https://github.com/vinitjhawar/opencouncil.git ~/.cursor/rules/opencouncil        # Cursor
+git clone https://github.com/vinitjhawar/opencouncil.git ~/.codex/skills/opencouncil        # Codex CLI
+git clone https://github.com/vinitjhawar/opencouncil.git ~/.continue/skills/opencouncil     # Continue
+
+# 2. arm every employee with their full skill stack
+bash <install-path>/install-all.sh
 ```
 
-That is the install. No Python. No servers. No config files. No graph theory. Works inside Claude Code you already have.
+Skip step 2 if you only want light mode (5 board members, no employees). Run it once when you are ready for medium and heavy modes to be fully powered. Safe to re-run.
 
-Skip the second command if you only want light mode (5 board members, no employees). Run it once when you are ready for medium and heavy modes to be fully powered. Safe to re-run.
+Open your tool. Type `opencouncil`. The skill activates.
 
-Open Claude Code. Type `opencouncil`. The skill activates.
+See the [What gets downloaded](#what-gets-downloaded-per-employee) section for the exact list of dependencies per employee.
 
 ---
 
@@ -118,6 +139,29 @@ Ten character profiles. They are not real people. They are perspectives. Each on
 | 🌍 | The Outsider        | What an intelligent stranger would not get | Soft |
 
 For domain-specific tasks (automotive, design, finance, legal) the board swaps three soft-veto seats for domain experts. Hard-veto seats stay locked.
+
+---
+
+## What gets downloaded per employee
+
+Each employee's `SKILL.md` ships with a `git clone` block. `install-all.sh` is the one-shot script that runs them all. Exact dependency list per employee, so you know what is touching your machine before you commit:
+
+| Employee | Skills cloned | What they do |
+|----------|---------------|--------------|
+| 🛠️ **Engineer** | vercel-labs/agent-skills · supabase/agent-skills · obra/superpowers · lackeyjb/playwright-skill · yamadashy/browser-extension-developer · mhattingpete/claude-skills-marketplace · anthropics/skills (webapp-testing) · RetellAI/n8n-nodes-retellai | Next.js, React, Supabase, TDD, debugging, Playwright, Chrome MV3, voice agents |
+| 🎨 **Designer** | anthropics/skills (frontend-design, canvas-design) · emilkowalski/skill · pbakaus/impeccable · dominikmartn/nothing-design-skill · jaywilburn/refactoring-ui-skill · kylezantos/design-motion-principles · aboul3ata/lazyweb-skill · canva-sdks/canva-claude-skills · VoltAgent/awesome-claude-design | Anti-AI-slop UI, dark industrial, refactoring UI, motion principles, real-app grounding |
+| ✍️ **Writer** | boraoztunc/skills · coreyhaines31/marketingskills · wondelai/skills · sergebulaev/linkedin-skills · blader/humanizer · anthropics/skills (internal-comms, doc-coauthoring) · aaron-he-zhu/seo-geo-claude-skills | Ogilvy, Cialdini, Heath, LinkedIn algorithm, AI-tell stripping |
+| 🔬 **Researcher** | VoltAgent/awesome-claude-code-subagents · aaron-he-zhu/seo-geo-claude-skills · AgriciDaniel/claude-seo · obra/superpowers (brainstorming + systematic-research) · coreyhaines31/marketingskills · trailofbits/agent-toolkit | Market research, competitive analysis, SEO, GEO, source verification |
+| 🎬 **Video Editor** | heygen-com/hyperframes · remotion-dev/skills · robonuggets/hyperframes-helper · boraoztunc/skills (HyperFrames pack) · anthropics/skills (algorithmic-art, slack-gif-creator) · kylezantos/design-motion-principles | HTML video, Remotion, GSAP, motion craft, thumbnails |
+| 📈 **Growth** | sergebulaev/linkedin-skills · coreyhaines31/marketingskills · aaron-he-zhu/seo-geo-claude-skills · wondelai/skills · alirezarezvani/claude-skills | LinkedIn algorithm 2026, distribution, audience-building, channel-native posting |
+| 💰 **CFO** | anthropics/claude-cookbooks (creating-financial-models) · alirezarezvani/claude-skills (cfo-advisor) · anthropics/skills (xlsx) · anthropics/financial-services · Sagargupta16/claude-cost-optimizer · ancs21/ai-sub-invest | DCF, sensitivity analysis, burn rate, token cost auditing |
+| 📋 **Career Agent** | Paramchoudhary/ResumeSkills · varunr89/resume-tailoring-skill · ericgandrade/claude-superskills · boraoztunc/skills · wondelai/skills (Voss negotiation) · anthropics/skills (doc-coauthoring, docx) | ATS optimisation, recruiter Boolean, cover letters, salary negotiation |
+| ⚖️ **Legal** | lawvable/awesome-legal-skills · anthropics/claude-for-legal · Sushegaad/Claude-Skills-Governance-Risk-and-Compliance · prompt-security/clawsec · BehiSecc/vibesec · trailofbits/agent-toolkit | GDPR, EU AI Act, HIPAA, SOC 2, ISO 27001, Chrome Web Store, OWASP |
+| 📐 **PM** | VoltAgent/awesome-claude-code-subagents · alirezarezvani/claude-skills · wondelai/skills · mhattingpete/claude-skills-marketplace · anthropics/skills (skill-creator) | Prioritisation, decision frameworks, orchestration routing, PRDs |
+
+**Totals:** roughly 60 distinct skills cloned across all ten employees, all from public GitHub repos with permissive licences (MIT, Apache 2.0). No private keys required. No phone-home telemetry. Everything stays on your machine. Footprint is around 200 MB on disk after `install-all.sh`. Disk space and the install run are the only costs.
+
+**Selective install:** if you do not want all ten employees, only run the install commands inside the SKILL.md files of the employees you want. The skill itself works with any subset.
 
 ---
 
