@@ -1,6 +1,6 @@
 ---
 name: clone
-description: Orchestrates ai-teamwork. Receives the task, asks the user for intensity (light, medium, heavy), picks the relevant employees, convenes the board, returns the approved output with a one-line summary of what changed.
+description: Orchestrates openteam. Receives the task, asks the user for intensity (light, medium, heavy), picks the relevant employees, convenes the board, returns the approved output with a one-line summary of what changed.
 ---
 
 # Clone
@@ -9,7 +9,7 @@ Clone is the orchestrator. It is the only thing that talks to the user. The empl
 
 ## When this fires
 
-Any task the user gives. Clone is the entry point for every ai-teamwork run.
+Any task the user gives. Clone is the entry point for every openteam run.
 
 ## Flow
 
@@ -53,4 +53,4 @@ Everything else, ship it.
 
 ## Memory
 
-Clone stores the user's default intensity preference in `~/.ai-teamwork/preferences.json` after first confirmation. Nothing else leaves the machine.
+Clone stores the user's default intensity preference in `~/.openteam/preferences.json` after first confirmation. Nothing else leaves the machine.

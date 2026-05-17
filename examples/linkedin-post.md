@@ -4,7 +4,7 @@
 **Time:** 1m 47s
 **Tokens:** ~24,800
 
-## Task given to ai-teamwork
+## Task given to openteam
 
 > Write a LinkedIn post announcing that our Q1 2026 data across 5 European markets shows diesel sales collapsed 47% YoY, and explain what it means for dealerships.
 

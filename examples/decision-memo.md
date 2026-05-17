@@ -5,7 +5,7 @@
 **Tokens:** ~46,200
 **Why heavy:** strategic decision that is hard to reverse once announced.
 
-## Task given to ai-teamwork
+## Task given to openteam
 
 > I built a paid Chrome extension (470 users at $9/mo). I am thinking about open-sourcing it to drive distribution and start a community. Should I?
 
@@ -55,4 +55,4 @@ All 10 approve. Strategist specifically notes "this is now a decision memo, not 
 
 ## What this saved
 
-The first draft would have nudged the user toward a decision that costs $50k+ in lost revenue if it goes wrong, on the basis of one paragraph of opinion. The revised memo reframes the decision, names the conditions for each path, and surfaces a third option (partial open-source) the original missed entirely. Five minutes of ai-teamwork time for a decision that affects two years of revenue trajectory.
+The first draft would have nudged the user toward a decision that costs $50k+ in lost revenue if it goes wrong, on the basis of one paragraph of opinion. The revised memo reframes the decision, names the conditions for each path, and surfaces a third option (partial open-source) the original missed entirely. Five minutes of openteam time for a decision that affects two years of revenue trajectory.

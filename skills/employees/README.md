@@ -19,7 +19,7 @@ Ten employees that draft the work before the board reviews it. Each one is loade
 
 Each employee SKILL.md ships with the install commands for its full skill stack (5-12 skills from the curated catalogue: vercel-labs, supabase, obra/superpowers, anthropics/skills, emilkowalski, kylezantos, sergebulaev, lawvable, alirezarezvani, and others). Run the install commands in your shell once and the employee is fully trained.
 
-When you trigger ai-teamwork in medium or heavy mode, Clone picks the employees relevant to your task, convenes them, and they draft together. The Board reviews the draft. You see the verdict.
+When you trigger openteam in medium or heavy mode, Clone picks the employees relevant to your task, convenes them, and they draft together. The Board reviews the draft. You see the verdict.
 
 ## Who activates when
 

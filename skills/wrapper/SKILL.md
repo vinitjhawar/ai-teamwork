@@ -1,11 +1,11 @@
 ---
 name: wrapper
-description: Wraps any other Claude Code skill you have installed and runs the ai-teamwork board review on top of its output. Activates when the user prefixes a skill call with "wrap" or sets wrapping as default. Part of v2.
+description: Wraps any other Claude Code skill you have installed and runs the openteam board review on top of its output. Activates when the user prefixes a skill call with "wrap" or sets wrapping as default. Part of v2.
 ---
 
 # Wrapper mode (v2)
 
-ai-teamwork's second mode. Instead of running its own employees, the wrapper intercepts the output of any other Claude Code skill you have installed and runs the board review gate on top of it. Your existing skill keeps its voice and behaviour. Only the quality gate is added.
+openteam's second mode. Instead of running its own employees, the wrapper intercepts the output of any other Claude Code skill you have installed and runs the board review gate on top of it. Your existing skill keeps its voice and behaviour. Only the quality gate is added.
 
 ## How it works
 
@@ -17,7 +17,7 @@ ai-teamwork's second mode. Instead of running its own employees, the wrapper int
 
 ## Why this matters
 
-Most users already have a stack of Claude Code skills they like. Switching off them to use ai-teamwork is friction. Wrapper mode means you keep your existing tools and just add the quality gate on top.
+Most users already have a stack of Claude Code skills they like. Switching off them to use openteam is friction. Wrapper mode means you keep your existing tools and just add the quality gate on top.
 
 ## Compatible skills
 
@@ -37,10 +37,10 @@ Three ways:
 wrap <skill-name> <args>
 
 # set wrapping as default for a skill
-ai-teamwork wrap-default <skill-name>
+openteam wrap-default <skill-name>
 
 # unwrap (revert to plain skill behaviour)
-ai-teamwork unwrap <skill-name>
+openteam unwrap <skill-name>
 ```
 
 ## Status
