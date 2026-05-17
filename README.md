@@ -121,6 +121,25 @@ For domain-specific tasks (automotive, design, finance, legal) the board swaps t
 
 ---
 
+## Use cases
+
+Long-tail use cases the board catches that raw Claude misses:
+
+- **AI code review** for engineers: the Engineer drafts the patch, the board's Sceptic, Numbers Person, and Compliance Eye stress-test the diff before it ships
+- **AI peer review** for researchers: the Researcher pulls sources, the Numbers Person demands citations, the Outsider flags assumed jargon
+- **AI second opinion** for founders making strategic calls: PM, CFO, and Strategist run the no-case before approving the yes-case
+- **AI red team** for content creators: Writer drafts the hook, Sceptic strikes overclaims, End User asks "what do I do Monday?", Editor cuts AI tells
+- **AI quality control** for product teams: every output passes through 8-of-10 board consensus before reaching the user
+- **AI hallucination prevention** at the gate: hard-veto Numbers Person blocks any unsourced statistic from shipping
+- **Cover letter and CV polish** for job seekers: Career Agent drafts, Writer kills filler, Veteran calls out every generic phrase recruiters skim past
+- **LinkedIn and Instagram content audit**: Growth Strategist picks platform fit, Writer rewrites for native algorithm signals, board catches AI tells before posting
+- **Cover letter for senior product roles** at FAANG / scale-ups: heavy mode runs the full team with 3 revision loops, kills every "I am writing to express my interest" opener
+- **Open-source release decisions**: PM and CFO surface revenue trade-offs, Legal flags licence-choice risk before announcement
+
+Whatever you ship, the board reviews it first.
+
+---
+
 ## Real examples
 
 Three transcripts in the [examples](examples/) folder, each showing the draft, the board's verdict, and what changed.
