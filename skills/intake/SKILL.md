@@ -1,6 +1,6 @@
 ---
 name: intake
-description: The one-question router. Asks the user light, medium, or heavy and returns the chosen intensity to clone. Handles default preference memory and the "this time" override syntax.
+description: The one-question router. Asks the user light, medium, or heavy and returns the chosen intensity to clone. Always asks every time unless the user has explicitly set a remembered default with the "remember" or "always" commands.
 ---
 
 # Intake
@@ -41,24 +41,36 @@ In medium and heavy modes, clone picks which employees attend based on the task.
 
 Accept any of: `light`, `l`, `1` → light. `medium`, `m`, `2` → medium. `heavy`, `h`, `3` → heavy. Case-insensitive. Whitespace ignored.
 
-Override syntax: `heavy this time` or `light this time` overrides the stored default for one run only.
+## Memory behaviour (important)
 
-## Default memory
+**Default: always ask, every single time.** Intake never auto-prompts "do you want to remember this?" after a run. The question is asked fresh on every task.
 
-After the first successful run, intake asks once:
+A remembered default is set ONLY when the user explicitly says so. Recognised commands:
 
-```
-remember <intensity> as your default? (y/n)
-```
+| User says | Effect |
+|-----------|--------|
+| `remember this` | Saves the just-picked mode as the default |
+| `remember light` | Saves `light` as the default |
+| `remember medium` | Saves `medium` as the default |
+| `remember heavy` | Saves `heavy` as the default |
+| `always heavy` | Same as `remember heavy` |
+| `forget my default` | Clears the saved default, back to asking every time |
+| `forget` | Same as above |
 
-If `y`, write to `~/.opencouncil/preferences.json`:
+If a default exists, intake skips the question and uses that default. Override for one run only with `heavy this time`, `light this time`, or `medium this time` (does not change the saved default).
+
+If no default exists (the user has never said "remember"), intake always asks.
+
+## Storage
+
+When the user explicitly sets a default, write to `~/.opencouncil/preferences.json`:
 
 ```json
-{ "default_intensity": "medium", "set_at": "2026-05-17T13:50:00Z" }
+{ "default_intensity": "medium", "set_by_user_at": "2026-05-17T13:50:00Z" }
 ```
 
-On future runs, intake reads the file. If a default exists, skip the question and proceed directly. Override with `heavy this time` for one run, without overwriting the default.
+The `set_by_user_at` field exists to make it clear this was a deliberate user action, not an auto-remember.
 
 ## Reset
 
-`opencouncil reset` clears the stored default and triggers the question on the next run.
+`opencouncil reset` clears the stored default and any other preferences. Same as `forget my default`.

@@ -47,11 +47,16 @@ Each one is prompted to disagree, not to agree. Only after the board reaches con
 
 ## Install
 
+Two commands. The first installs Open Council. The second arms every employee with their full skill stack (vercel-labs, supabase, emilkowalski, sergebulaev, lawvable, and 55+ more — about 60 skills across the team).
+
 ```bash
 git clone https://github.com/vinitjhawar/opencouncil.git ~/.claude/skills/opencouncil
+bash ~/.claude/skills/opencouncil/install-all.sh
 ```
 
 That is the install. No Python. No servers. No config files. No graph theory. Works inside Claude Code you already have.
+
+Skip the second command if you only want light mode (5 board members, no employees). Run it once when you are ready for medium and heavy modes to be fully powered. Safe to re-run.
 
 Open Claude Code. Type `opencouncil`. The skill activates.
 
@@ -79,7 +84,7 @@ heavy    10 board members, full debate, up to 3 revision loops
 reply: light, medium, or heavy
 ```
 
-After the first task, opencouncil asks once if you want to remember your choice. Say yes once. Never asked again. Override any time with `heavy this time` or `light this time`.
+Open Council asks this **every single time** by default. It never auto-prompts to remember anything. If you want a fixed default, type `remember light`, `remember medium`, `remember heavy`, or `always heavy` once and it will skip the question forever after. Clear it any time with `forget my default`. Override a remembered default for one run with `heavy this time` or `light this time`.
 
 ---
 
