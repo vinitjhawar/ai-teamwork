@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Raw Claude vs Council" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Raw Claude vs AI Teamwork" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif">
   <rect width="1200" height="700" fill="#ffffff"/>
 
   <text x="600" y="100" text-anchor="middle" font-size="32" font-weight="500" fill="#0a0a0a">same prompt. two outputs.</text>

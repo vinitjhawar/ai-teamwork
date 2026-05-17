@@ -1,6 +1,6 @@
 # Board profile library
 
-The ten default profiles. Each is loaded as a separate role inhabitation during council runs.
+The ten default profiles. Each is loaded as a separate role inhabitation during ai-teamwork runs.
 
 ---
 

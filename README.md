@@ -1,19 +1,19 @@
 <div align="center">
 
-<img src="assets/hero.svg" alt="Council" width="780"/>
+<img src="assets/hero.svg" alt="AI Teamwork" width="780"/>
 
-# Council
+# AI Teamwork
 
-### The Claude Code skill that argues with itself before you see the answer.
+### The Claude Code skill that gives you a ten-person team and a ten-member board before you see the answer.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-22d3ee.svg)](LICENSE)
 [![Claude Code skill](https://img.shields.io/badge/claude%20code-skill-f59e0b.svg)](#install)
 [![Install Time](https://img.shields.io/badge/install-30%20seconds-22c55e.svg)](#install)
 [![Questions Asked](https://img.shields.io/badge/questions%20asked-1-a78bfa.svg)](#use)
 
-**A multi-agent AI quality gate for [Claude Code](https://claude.com/claude-code). One command to install. One question to answer. Ten board members debating your output before it reaches you.**
+**A multi-agent AI quality system for [Claude Code](https://claude.com/claude-code). Ten specialist employees draft the work. Ten industry-veteran board members review it. You see one verdict. One command to install, one question to answer.**
 
-Built as a [Claude skill](https://claude.com/claude-code) for anti-sycophancy, AI quality control, multi-agent orchestration, LLM disagreement, and hallucination prevention. Works with Claude Sonnet, Claude Opus, and Claude Haiku via Claude Code.
+Built as a [Claude skill](https://claude.com/claude-code) for anti-sycophancy, AI quality control, multi-agent orchestration, LLM disagreement, AI hallucination prevention, and team-style task execution. Works with Claude Sonnet, Claude Opus, and Claude Haiku via Claude Code.
 
 </div>
 
@@ -26,10 +26,10 @@ When a user pushed back on a correct answer, GPT-4 backed down and agreed with t
 The output is not wrong in obvious ways. It is wrong in smooth, confident, slightly off ways. It reads like something you would write. So you ship it. This is the AI hallucination problem nobody markets around: the answer sounds plausible, has the right shape, and quietly destroys your credibility when it ships.
 
 <div align="center">
-<img src="assets/before-after.svg" alt="Raw Claude vs Council" width="780"/>
+<img src="assets/before-after.svg" alt="Raw Claude vs AI Teamwork" width="780"/>
 </div>
 
-This is the bug at the heart of every AI tool. Council is the patch.
+This is the bug at the heart of every AI tool. AI Teamwork is the patch.
 
 ---
 
@@ -40,7 +40,7 @@ You give Claude a task. Behind the scenes, a board of ten distinct member profil
 Each one is prompted to disagree, not to agree. Only after the board reaches consensus (8 out of 10, zero hard vetoes) does the answer reach you. You see one polished output plus one line of what got changed.
 
 <div align="center">
-<img src="assets/architecture.svg" alt="Council architecture: light, medium, heavy" width="780"/>
+<img src="assets/architecture.svg" alt="AI Teamwork architecture: light, medium, heavy" width="780"/>
 </div>
 
 ---
@@ -48,18 +48,18 @@ Each one is prompted to disagree, not to agree. Only after the board reaches con
 ## Install
 
 ```bash
-git clone https://github.com/vinitjhawar/council.git ~/.claude/skills/council
+git clone https://github.com/vinitjhawar/ai-teamwork.git ~/.claude/skills/ai-teamwork
 ```
 
 That is the install. No Python. No servers. No config files. No graph theory. Works inside Claude Code you already have.
 
-Open Claude Code. Type `council`. The skill activates.
+Open Claude Code. Type `ai-teamwork`. The skill activates.
 
 ---
 
 ## Use
 
-After the task, council asks you one question:
+After the task, ai-teamwork asks you one question:
 
 ```
 task received. pick intensity:
@@ -79,7 +79,7 @@ heavy    10 board members, full debate, up to 3 revision loops
 reply: light, medium, or heavy
 ```
 
-After the first task, council asks once if you want to remember your choice. Say yes once. Never asked again. Override any time with `heavy this time` or `light this time`.
+After the first task, ai-teamwork asks once if you want to remember your choice. Say yes once. Never asked again. Override any time with `heavy this time` or `light this time`.
 
 ---
 
@@ -126,9 +126,9 @@ Three transcripts in the [examples](examples/) folder, each showing the draft, t
 
 ---
 
-## How council compares
+## How ai-teamwork compares
 
-| | LangChain | CrewAI | AutoGen | Awesome Copilot | **Council** |
+| | LangChain | CrewAI | AutoGen | Awesome Copilot | **AI Teamwork** |
 |---|---|---|---|---|---|
 | Install time | Hours | 30 min | Hours | 5 min | **30 sec** |
 | Requires Python | Yes | Yes | Yes | No | **No** |
@@ -139,7 +139,7 @@ Three transcripts in the [examples](examples/) folder, each showing the draft, t
 | Cost predictable upfront | No | No | No | N/A | **Yes** |
 | For non-coders | No | No | No | Partial | **Yes** |
 
-LangChain gives you pipes. CrewAI gives you roles. Awesome Copilot gives you prompts. Council gives you the disagreement layer none of them built.
+LangChain gives you pipes. CrewAI gives you roles. Awesome Copilot gives you prompts. AI Teamwork gives you the disagreement layer none of them built.
 
 ---
 
@@ -151,14 +151,14 @@ Three reasons, in order of importance.
 
 **2. It installs and works in 60 seconds.** No infrastructure. No learning curve. One command, one question, output.
 
-**3. It is built for people who do not write Python.** CrewAI, LangGraph, AutoGen all require code. Council requires Claude Code, which you already have.
+**3. It is built for people who do not write Python.** CrewAI, LangGraph, AutoGen all require code. AI Teamwork requires Claude Code, which you already have.
 
 ---
 
 ## File structure
 
 ```
-council/
+ai-teamwork/
 ├── skills/
 │   ├── clone/SKILL.md       The orchestrator that runs the show
 │   ├── bod/SKILL.md         The 10 board profiles + veto rules
@@ -180,8 +180,8 @@ council/
 
 ## Roadmap
 
-- **v1 (now)** Council standalone. Light, medium, heavy. Memory of preference.
-- **v2** Wrapper mode. Council intercepts output from any other Claude Code skill you have installed and runs the disagreement gate on top.
+- **v1 (now)** AI Teamwork standalone. Light, medium, heavy. Memory of preference.
+- **v2** Wrapper mode. AI Teamwork intercepts output from any other Claude Code skill you have installed and runs the disagreement gate on top.
 - **v3** Full team mode. Ten specialist employees (Engineer, Designer, Writer, Researcher, etc.) that the board can delegate to for complex multi-step tasks.
 
 Full plan in [ROADMAP.md](ROADMAP.md).
@@ -190,8 +190,8 @@ Full plan in [ROADMAP.md](ROADMAP.md).
 
 ## FAQ
 
-**Does council send my data anywhere?**
-No. Council runs entirely inside Claude Code on your machine. Nothing leaves.
+**Does ai-teamwork send my data anywhere?**
+No. AI Teamwork runs entirely inside Claude Code on your machine. Nothing leaves.
 
 **Will it slow me down?**
 Light mode is 30 seconds. Faster than reviewing a bad draft and rewriting it.
@@ -203,7 +203,7 @@ Yes. Every output ships with a one-line summary of what got changed. For the ful
 v1 runs standalone. v2 will wrap any other skill.
 
 **Why not just prompt Claude to be critical?**
-Tried, tested, documented in [docs/how-it-works.md](docs/how-it-works.md). One-shot critical prompts collapse back to agreement within three turns. Council's disagreement is structural, not prompt-engineered.
+Tried, tested, documented in [docs/how-it-works.md](docs/how-it-works.md). One-shot critical prompts collapse back to agreement within three turns. AI Teamwork's disagreement is structural, not prompt-engineered.
 
 **Can I add my own board profile?**
 Yes. See [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -232,6 +232,6 @@ Claude skill · Claude Code skill · Claude Code plugin · multi-agent system ·
 
 Built by [Vinit Jhawar](https://github.com/vinitjhawar) because confident wrong AI output is the single most expensive bug in modern work.
 
-If council saves you one bad ship, star the repo.
+If ai-teamwork saves you one bad ship, star the repo.
 
 </div>

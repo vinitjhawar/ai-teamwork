@@ -1,6 +1,6 @@
 ---
 name: bod
-description: The board of directors. Ten distinct reviewer profiles who structurally disagree with the draft output before it reaches the user. Activated by clone on every council run.
+description: The board of directors. Ten distinct reviewer profiles who structurally disagree with the draft output before it reaches the user. Activated by clone on every ai-teamwork run.
 ---
 
 # Board of Directors
@@ -36,9 +36,9 @@ For tasks tagged with a domain (automotive, design, finance, legal, etc.) the bo
 
 Each member emits one of: `approve`, `flag <reason>`, `veto <reason>`.
 
-- Light mode: 5 members. All approve required.
-- Medium mode: 10 members. 80% approval required (8 of 10), zero hard vetoes.
-- Heavy mode: 10 members. 80% approval required, zero hard vetoes, plus 3 revision loops if needed.
+- **Light mode**: 5 members. All approve required. No employee draft, board reviews the user task and clone's response directly.
+- **Medium mode**: 10 members. 80% approval required (8 of 10), zero hard vetoes. Board reviews the draft produced by 3 to 5 [employees](../employees/README.md) chosen by clone.
+- **Heavy mode**: 10 members. 80% approval required, zero hard vetoes, plus up to 3 revision loops. Board reviews the synthesis from the full employee meeting.
 
 ## Output
 

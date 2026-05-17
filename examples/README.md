@@ -1,6 +1,6 @@
 # Examples
 
-Three real-shaped tasks run through the council. Each shows the draft, the board's verdict, and what changed.
+Three real-shaped tasks run through the ai-teamwork. Each shows the draft, the board's verdict, and what changed.
 
 | Task | Mode | Time | Why this mode |
 |------|------|------|---------------|
