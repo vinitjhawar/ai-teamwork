@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540" role="img" aria-label="Quality per token across modes">
+  <rect width="880" height="540" fill="#0a0908"/>
+
+  <g font-family="-apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif" font-size="12" fill="#737373">
+    <text x="48" y="40">quality per token</text>
+    <text x="832" y="40" text-anchor="end" fill="#525252">single linkedin post  ·  same prompt  ·  measured</text>
+  </g>
+  <line x1="48" y1="56" x2="832" y2="56" stroke="#1c1917"/>
+
+  <g font-family="-apple-system, 'Inter', system-ui, sans-serif" font-size="11" fill="#525252">
+    <text x="48" y="86">cell width is proportional to tokens spent  ·  cell brightness is output quality</text>
+  </g>
+
+  <g transform="translate(48 110)">
+    <rect x="0" y="0" width="68" height="380" fill="#92400e" stroke="#0a0908" stroke-width="2"/>
+    <g font-family="-apple-system, 'Inter', system-ui, sans-serif" fill="#fafafa">
+      <text x="12" y="28" font-size="14">light</text>
+      <text x="12" y="46" font-size="10" fill="#fef3c7">quality 8.0</text>
+      <text x="12" y="62" font-size="10" fill="#fef3c7">8k tokens</text>
+      <text x="12" y="368" font-size="9" fill="#fbbf24">best ratio  ↑</text>
+    </g>
+  </g>
+
+  <g transform="translate(120 110)">
+    <rect x="0" y="0" width="98" height="380" fill="#451a03" stroke="#0a0908" stroke-width="2"/>
+    <g font-family="-apple-system, 'Inter', system-ui, sans-serif" fill="#fafafa">
+      <text x="12" y="28" font-size="14">raw claude</text>
+      <text x="12" y="46" font-size="10" fill="#fed7aa">quality 6.5</text>
+      <text x="12" y="62" font-size="10" fill="#fed7aa">12k tokens</text>
+      <text x="12" y="368" font-size="9" fill="#ea580c">ships sycophancy</text>
+    </g>
+  </g>
+
+  <g transform="translate(222 110)">
+    <rect x="0" y="0" width="240" height="380" fill="#78350f" stroke="#0a0908" stroke-width="2"/>
+    <g font-family="-apple-system, 'Inter', system-ui, sans-serif" fill="#fafafa">
+      <text x="12" y="28" font-size="14">medium</text>
+      <text x="12" y="46" font-size="11" fill="#fde68a">quality 9.0</text>
+      <text x="12" y="62" font-size="11" fill="#fde68a">25k tokens</text>
+      <text x="12" y="368" font-size="10" fill="#fbbf24">most common</text>
+    </g>
+  </g>
+
+  <g transform="translate(466 110)">
+    <rect x="0" y="0" width="366" height="380" fill="#431407" stroke="#0a0908" stroke-width="2"/>
+    <g font-family="-apple-system, 'Inter', system-ui, sans-serif" fill="#fafafa">
+      <text x="12" y="28" font-size="14">heavy</text>
+      <text x="12" y="46" font-size="11" fill="#fed7aa">quality 9.2</text>
+      <text x="12" y="62" font-size="11" fill="#fed7aa">45k tokens</text>
+      <text x="12" y="368" font-size="10" fill="#fb923c">diminishing return</text>
+    </g>
+  </g>
+
+  <g font-family="-apple-system, 'Inter', system-ui, sans-serif" font-size="10" fill="#737373">
+    <text x="48" y="514">light: 1.00 quality per 1k tokens  ·  medium: 0.36  ·  heavy: 0.20  ·  raw claude: 0.54 but unverified</text>
+  </g>
+  <line x1="48" y1="528" x2="832" y2="528" stroke="#1c1917"/>
+</svg>
