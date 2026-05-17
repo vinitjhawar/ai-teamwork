@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Council — hero preview</title>
+<style>
+  :root { color-scheme: dark; }
+  html, body { margin: 0; padding: 0; background: #0a0908; min-height: 100vh; }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: ui-monospace, 'SF Mono', Menlo, monospace;
+    color: #525252;
+    padding: 48px 24px;
+    gap: 32px;
+  }
+  .frame {
+    width: min(960px, 100%);
+    border: 1px solid #1c1917;
+    border-radius: 4px;
+    overflow: hidden;
+    background: #0a0908;
+  }
+  .frame img, .frame object { display: block; width: 100%; height: auto; }
+  .caption {
+    font-size: 10px;
+    letter-spacing: 2.5px;
+    color: #404040;
+    text-transform: uppercase;
+  }
+  .row { display: flex; gap: 12px; align-items: center; }
+  .dot { width: 6px; height: 6px; border-radius: 50%; background: #f59e0b; box-shadow: 0 0 12px #f59e0b; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <span class="dot"></span>
+    <span class="caption">github readme · light theme preview</span>
+  </div>
+  <div class="frame">
+    <object type="image/svg+xml" data="hero.svg" aria-label="Council hero"></object>
+  </div>
+  <div class="row">
+    <span class="caption">9 second loop · smil native · no mp4</span>
+  </div>
+</body>
+</html>
