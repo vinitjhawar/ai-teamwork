@@ -1,6 +1,6 @@
 # Board profile library
 
-The ten default profiles. Each is loaded as a separate role inhabitation during openteam runs.
+The ten default profiles. Each is loaded as a separate role inhabitation during opencouncil runs.
 
 ---
 

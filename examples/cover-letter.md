@@ -5,7 +5,7 @@
 **Tokens:** ~43,600
 **Why heavy:** cover letters are irreversible once sent, the board owes you maximum scrutiny.
 
-## Task given to openteam
+## Task given to opencouncil
 
 > Write a cover letter for [target company]'s Senior Product Manager role. My background: 12 years automotive (Toyota, BYD), Cranfield MBA, currently building AI tooling for dealerships. Their JD emphasises ambiguity tolerance, cross-functional leadership, and shipping under uncertainty.
 

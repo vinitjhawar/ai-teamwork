@@ -1,6 +1,6 @@
 ---
 name: bod
-description: The board of directors. Ten distinct reviewer profiles who structurally disagree with the draft output before it reaches the user. Activated by clone on every openteam run.
+description: The board of directors. Ten distinct reviewer profiles who structurally disagree with the draft output before it reaches the user. Activated by clone on every opencouncil run.
 ---
 
 # Board of Directors

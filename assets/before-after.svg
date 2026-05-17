@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Raw Claude vs OpenTeam" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Raw Claude vs Open Council" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif">
   <rect width="1200" height="700" fill="#ffffff"/>
 
   <text x="600" y="100" text-anchor="middle" font-size="32" font-weight="500" fill="#0a0a0a">same prompt. two outputs.</text>
@@ -19,7 +19,7 @@
 
   <g transform="translate(900 240)">
     <rect x="-220" y="-30" width="180" height="40" rx="20" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.2"/>
-    <text x="-130" y="-4" text-anchor="middle" font-size="14" font-weight="600" fill="#16a34a" letter-spacing="1.5">WITH OPENTEAM</text>
+    <text x="-130" y="-4" text-anchor="middle" font-size="14" font-weight="600" fill="#16a34a" letter-spacing="1.5">WITH OPEN COUNCIL</text>
     <text x="-220" y="60" font-size="22" fill="#0a0a0a" font-style="italic">"Cannot answer that</text>
     <text x="-220" y="92" font-size="22" fill="#0a0a0a" font-style="italic">without seeing the page.</text>
     <text x="-220" y="124" font-size="22" fill="#0a0a0a" font-style="italic">Paste the URL."</text>

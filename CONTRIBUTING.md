@@ -1,4 +1,4 @@
-# Contributing to OpenTeam
+# Contributing to Open Council
 
 Three ways to help, in order of impact.
 
@@ -17,7 +17,7 @@ Profile PRs are merged fast if they pass three rules:
 
 ## 2. Add a worked example
 
-Real before-and-after transcripts in `examples/` are the most persuasive part of this repo. Anyone shipping a openteam-reviewed output for real work can contribute one. Use [examples/linkedin-post.md](examples/linkedin-post.md) as the template. Anonymise anything sensitive.
+Real before-and-after transcripts in `examples/` are the most persuasive part of this repo. Anyone shipping a opencouncil-reviewed output for real work can contribute one. Use [examples/linkedin-post.md](examples/linkedin-post.md) as the template. Anonymise anything sensitive.
 
 ## 3. Report a sycophancy escape
 
@@ -33,7 +33,7 @@ Every escape is a chance to refine a profile or add a new one.
 
 - Generic "make it more agentic" PRs. The product is the disagreement layer, not orchestration breadth.
 - Profile PRs whose reflexes overlap an existing profile by more than half. We will close them with a note about which existing profile to extend instead.
-- Anything that adds dependencies. OpenTeam is intentionally zero-install beyond Claude Code.
+- Anything that adds dependencies. Open Council is intentionally zero-install beyond Claude Code.
 
 ## House style for any markdown change
 

@@ -1,6 +1,6 @@
 # Examples
 
-Three real-shaped tasks run through the openteam. Each shows the draft, the board's verdict, and what changed.
+Three real-shaped tasks run through the opencouncil. Each shows the draft, the board's verdict, and what changed.
 
 | Task | Mode | Time | Why this mode |
 |------|------|------|---------------|

@@ -51,7 +51,7 @@ After the first successful run, intake asks once:
 remember <intensity> as your default? (y/n)
 ```
 
-If `y`, write to `~/.openteam/preferences.json`:
+If `y`, write to `~/.opencouncil/preferences.json`:
 
 ```json
 { "default_intensity": "medium", "set_at": "2026-05-17T13:50:00Z" }
@@ -61,4 +61,4 @@ On future runs, intake reads the file. If a default exists, skip the question an
 
 ## Reset
 
-`openteam reset` clears the stored default and triggers the question on the next run.
+`opencouncil reset` clears the stored default and triggers the question on the next run.
