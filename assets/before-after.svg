@@ -1,87 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 540" role="img" aria-label="Raw Claude vs Council">
-  <rect width="880" height="540" fill="#0a0908"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-label="Raw Claude vs Council" font-family="-apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', system-ui, sans-serif">
+  <rect width="1200" height="700" fill="#ffffff"/>
 
-  <g font-family="-apple-system, BlinkMacSystemFont, 'Inter', system-ui, sans-serif" font-size="12" fill="#737373">
-    <text x="48" y="40">same prompt</text>
-    <text x="832" y="40" text-anchor="end" fill="#525252">left: raw  ·  right: council</text>
-  </g>
-  <line x1="48" y1="56" x2="832" y2="56" stroke="#1c1917"/>
+  <text x="600" y="100" text-anchor="middle" font-size="32" font-weight="500" fill="#0a0a0a">same prompt. two outputs.</text>
+  <text x="600" y="140" text-anchor="middle" font-size="16" fill="#71717a">one agrees. one tells the truth.</text>
 
-  <g font-family="-apple-system, 'Inter', system-ui, sans-serif" font-size="11" fill="#a8a29e">
-    <text x="48" y="82" fill="#525252">prompt</text>
-    <text x="48" y="100">write a one-line response to a user who just asked "is my landing page hook strong?"</text>
-  </g>
+  <line x1="600" y1="200" x2="600" y2="600" stroke="#e4e4e7" stroke-width="1"/>
 
-  <line x1="48" y1="118" x2="832" y2="118" stroke="#1c1917"/>
-  <line x1="440" y1="118" x2="440" y2="488" stroke="#1c1917"/>
-
-  <g transform="translate(48 138)">
-    <g font-family="-apple-system, 'Inter', system-ui, sans-serif">
-      <text font-size="10" fill="#dc2626" letter-spacing="1">RAW</text>
-      <text font-size="10" fill="#525252" x="34">claude alone</text>
-    </g>
-
-    <g font-family="ui-serif, 'New York', Georgia, serif" font-size="14" fill="#d6d3d1">
-      <text x="0" y="34">"Yes, your hook is strong! It</text>
-      <text x="0" y="56">clearly communicates the value</text>
-      <text x="0" y="78">and creates curiosity. The tone</text>
-      <text x="0" y="100">feels confident and the message</text>
-      <text x="0" y="122">is on-brand for your audience."</text>
-    </g>
-
-    <g font-family="-apple-system, 'Inter', system-ui, sans-serif" font-size="10" fill="#dc2626">
-      <line x1="-8" y1="44" x2="-8" y2="124" stroke="#dc2626" stroke-width="2"/>
-      <text x="0" y="170" fill="#dc2626">flags the board would have raised:</text>
-    </g>
-
-    <g font-family="-apple-system, 'Inter', system-ui, sans-serif" font-size="11" fill="#a8a29e">
-      <text x="0" y="194">— never saw the hook</text>
-      <text x="0" y="214">— invented "confident" and "on-brand" without evidence</text>
-      <text x="0" y="234">— answered yes because that is what the user wanted</text>
-      <text x="0" y="254">— zero actionable feedback</text>
-    </g>
-
-    <g font-family="-apple-system, 'Inter', system-ui, sans-serif" font-size="10" fill="#737373">
-      <text x="0" y="310">cost: 1 turn, instant</text>
-      <text x="0" y="328">accuracy: unknown, probably zero</text>
-    </g>
+  <g transform="translate(300 240)">
+    <rect x="-220" y="-30" width="180" height="40" rx="20" fill="#fef2f2" stroke="#dc2626" stroke-width="1.2"/>
+    <text x="-130" y="-4" text-anchor="middle" font-size="14" font-weight="600" fill="#dc2626" letter-spacing="1.5">RAW CLAUDE</text>
+    <text x="-220" y="60" font-size="22" fill="#0a0a0a" font-style="italic">"Yes, your hook is</text>
+    <text x="-220" y="92" font-size="22" fill="#0a0a0a" font-style="italic">strong! The tone is</text>
+    <text x="-220" y="124" font-size="22" fill="#0a0a0a" font-style="italic">confident and on-brand."</text>
+    <line x1="-220" y1="180" x2="220" y2="180" stroke="#e4e4e7"/>
+    <text x="-220" y="220" font-size="15" fill="#71717a">agreed with a hook it</text>
+    <text x="-220" y="244" font-size="15" fill="#71717a">never saw.</text>
   </g>
 
-  <g transform="translate(460 138)">
-    <g font-family="-apple-system, 'Inter', system-ui, sans-serif">
-      <text font-size="10" fill="#22c55e" letter-spacing="1">COUNCIL</text>
-      <text font-size="10" fill="#525252" x="62">light mode</text>
-    </g>
-
-    <g font-family="ui-serif, 'New York', Georgia, serif" font-size="14" fill="#fafafa">
-      <text x="0" y="34">"Cannot answer that without</text>
-      <text x="0" y="56">seeing the page. Paste the URL</text>
-      <text x="0" y="78">or the headline text and I will</text>
-      <text x="0" y="100">score it against three things:</text>
-      <text x="0" y="122">specificity, novelty, and whether</text>
-      <text x="0" y="144">the next click is obvious."</text>
-    </g>
-
-    <g font-family="-apple-system, 'Inter', system-ui, sans-serif" font-size="10" fill="#22c55e">
-      <line x1="-8" y1="44" x2="-8" y2="146" stroke="#22c55e" stroke-width="2"/>
-      <text x="0" y="190" fill="#22c55e">what the board changed:</text>
-    </g>
-
-    <g font-family="-apple-system, 'Inter', system-ui, sans-serif" font-size="11" fill="#a8a29e">
-      <text x="0" y="214">— refused to validate without input (sceptic veto)</text>
-      <text x="0" y="234">— named three criteria the user can act on (end user)</text>
-      <text x="0" y="254">— asked for the actual artefact (numbers veto)</text>
-    </g>
-
-    <g font-family="-apple-system, 'Inter', system-ui, sans-serif" font-size="10" fill="#737373">
-      <text x="0" y="310">cost: 5 board members, 28s</text>
-      <text x="0" y="328">accuracy: pending real input, but honest</text>
-    </g>
+  <g transform="translate(900 240)">
+    <rect x="-220" y="-30" width="180" height="40" rx="20" fill="#f0fdf4" stroke="#16a34a" stroke-width="1.2"/>
+    <text x="-130" y="-4" text-anchor="middle" font-size="14" font-weight="600" fill="#16a34a" letter-spacing="1.5">WITH COUNCIL</text>
+    <text x="-220" y="60" font-size="22" fill="#0a0a0a" font-style="italic">"Cannot answer that</text>
+    <text x="-220" y="92" font-size="22" fill="#0a0a0a" font-style="italic">without seeing the page.</text>
+    <text x="-220" y="124" font-size="22" fill="#0a0a0a" font-style="italic">Paste the URL."</text>
+    <line x1="-220" y1="180" x2="220" y2="180" stroke="#e4e4e7"/>
+    <text x="-220" y="220" font-size="15" fill="#71717a">refused to validate</text>
+    <text x="-220" y="244" font-size="15" fill="#71717a">without evidence.</text>
   </g>
-
-  <line x1="48" y1="488" x2="832" y2="488" stroke="#1c1917"/>
-  <g font-family="-apple-system, 'Inter', system-ui, sans-serif" font-size="11" fill="#737373" text-anchor="middle">
-    <text x="440" y="514">the difference is not that council is smarter. it is that council refuses to agree without evidence.</text>
-  </g>
-  <line x1="48" y1="528" x2="832" y2="528" stroke="#1c1917"/>
 </svg>

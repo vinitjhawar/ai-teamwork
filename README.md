@@ -4,24 +4,26 @@
 
 # Council
 
-### AI that argues with itself before you see the answer.
+### The Claude Code skill that argues with itself before you see the answer.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-22d3ee.svg)](LICENSE)
 [![Claude Code skill](https://img.shields.io/badge/claude%20code-skill-f59e0b.svg)](#install)
 [![Install Time](https://img.shields.io/badge/install-30%20seconds-22c55e.svg)](#install)
 [![Questions Asked](https://img.shields.io/badge/questions%20asked-1-a78bfa.svg)](#use)
 
-**One command to install. One question to answer. Ten board members debating your output before it reaches you.**
+**A multi-agent AI quality gate for [Claude Code](https://claude.com/claude-code). One command to install. One question to answer. Ten board members debating your output before it reaches you.**
+
+Built as a [Claude skill](https://claude.com/claude-code) for anti-sycophancy, AI quality control, multi-agent orchestration, LLM disagreement, and hallucination prevention. Works with Claude Sonnet, Claude Opus, and Claude Haiku via Claude Code.
 
 </div>
 
 ---
 
-## The problem
+## The problem this Claude skill solves
 
-When a user pushed back on a correct answer, GPT-4 backed down and agreed with the wrong version in 78% of cases (Anthropic Sycophancy Eval, 2024). Across the major chat models, the agreement rate sits between 49% and 74%. The longer the conversation, the worse the drift.
+When a user pushed back on a correct answer, GPT-4 backed down and agreed with the wrong version in 78% of cases (Anthropic Sycophancy Eval, 2024). Across the major chat models including Claude, ChatGPT, and Gemini, the agreement rate sits between 49% and 74%. The longer the conversation, the worse the drift. AI sycophancy is the single biggest blocker to using LLMs for real work.
 
-The output is not wrong in obvious ways. It is wrong in smooth, confident, slightly off ways. It reads like something you would write. So you ship it.
+The output is not wrong in obvious ways. It is wrong in smooth, confident, slightly off ways. It reads like something you would write. So you ship it. This is the AI hallucination problem nobody markets around: the answer sounds plausible, has the right shape, and quietly destroys your credibility when it ships.
 
 <div align="center">
 <img src="assets/before-after.svg" alt="Raw Claude vs Council" width="780"/>
@@ -217,6 +219,12 @@ Three ways to help: add a board profile, contribute an example transcript, or re
 ## License
 
 MIT. Fork it. Ship it. Tell us what you built.
+
+---
+
+## Keywords
+
+Claude skill · Claude Code skill · Claude Code plugin · multi-agent system · multi-agent AI · AI agent orchestration · anti-sycophancy · AI quality control · AI quality gate · LLM disagreement · LLM hallucination prevention · prompt engineering Claude · agentic AI tool · AI code review · AI content review · Claude marketplace skill · Claude Sonnet · Claude Opus · Claude Haiku · Anthropic Claude · multi-perspective AI · AI consensus mechanism · Claude AI agent · skills for Claude Code · AI red team · AI second opinion · board of directors AI · AI critique · AI peer review · Claude skill library
 
 ---
 
